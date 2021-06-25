@@ -1,0 +1,33 @@
+.header{
+    
+    box-sizing: border-box;
+    width: 100%;
+    background: linear-gradient(to left, #FFC837, #FF8008); 
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.brand{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: name-appear 1s ease-out forwards;
+}
+
+@keyframes name-appear {
+    from {
+      opacity: 0;
+      transform: translateX(-3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
